@@ -1,0 +1,334 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@300&display=swap');
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{
+    margin:0;
+    padding: 0;
+    border: 0;
+    display: block;
+    font-family:"Open Sans", Helvetica, sans-serif;
+    box-sizing:border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Judson', serif;
+}
+
+h2{
+    font-size: 48pt;
+}
+p{
+    color: #393939;
+    font-size: 16pt;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 960px;
+}
+/* -----------Nav-------------- */
+.navbar{
+    position: fixed;
+    width: 100%;
+    background-color: rgba(247, 239, 219, 0.6);;
+    z-index: 3;
+}
+
+
+/* -----------Hero-------------- */
+.hero{
+    background: url(../images/html-programming-advanced-technology-web-concept_new.png) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title{
+    z-index: 2;
+}
+.hero h1 {
+    color: #4C4335;
+    font-size: 8rem;
+    font-weight: bold;
+}
+marquee{
+    color: #EFCEB1;
+    font-size: 10rem;
+    z-index: 1;
+    position:absolute;
+    bottom: 40vh;
+}
+
+.harry{
+    position: relative;
+    right: 3vh;
+}
+.shing{
+    position: relative;
+    left: 3vh;
+}
+
+.top-corner {
+    background-image: url(../images/top-background.png);
+    background-size: cover;
+    position: relative;
+    top: 180px;
+    height: 30vh;
+    width: 100vw;
+    z-index: 1
+}
+
+/* ------------About------------- */
+
+.about{
+    background-color: #EFCEB1;
+    z-index: 2;
+    padding-top: 40px;
+}
+
+.profile-picture{
+    align-items: center;
+    justify-items: center;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 30px;
+    border-radius: 50%;
+    
+}
+.about-title{
+    flex: 3;
+}
+
+.about-content{
+    flex: 4;
+}
+
+@media screen and (max-width: 768px){
+    .about >.container{
+        flex-direction: column;
+        padding: 0px 30px;
+    }
+
+    .about >.container > div{
+        width: 100%;
+    }
+    .about-title >h2{
+        text-align: center;
+    }
+    .profile-picture {
+        margin: 30px auto;
+        border-radius: 50%;
+
+    }
+}
+.tag-box{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+.tag{
+    font-weight: bolder;
+    color: white;
+    background-color: #ae8c70;
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+    padding: 8px 35px 8px 35px;
+    font-size: 18px;
+    margin: 5px;
+}
+
+/* ------------Projects------------- */
+.project {
+    background-color: #F9ECDE;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.bottom-corner {
+background-image: url(../images/bottom-background.png);
+    background-size: cover;
+    position: relative;
+    bottom: 20px;
+    height: 30vh;
+    width: 100vw;
+    z-index: 1;
+}
+
+.project-container{
+    display: flex;
+    flex-direction: column;
+}
+.project-title{
+    text-align: right;
+}
+
+.project-content {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    margin: 20px 0px;
+}
+
+.project-box {
+    margin: 20px 20px 0 0;
+}
+
+.project-box:nth-child(even) {
+    margin-right: 0;
+}
+.project-box >img {
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.more-project{
+    display: none;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.btn-more-Photo {
+    background-color: #6e3d1a;
+    color: white;
+    font-size: 16px;
+    padding: 12px 28px;
+    border: 0px;
+    border-radius: 20px;
+    margin: 30px auto;
+}
+
+.btn-more-Photo:hover {
+    background-color: #a28c5b;
+
+}
+
+@media screen and (max-width: 959px) {
+    .project-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .project-box {
+        margin: 20px 0px 0 0;
+    }
+    .project-box{
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .project-title {
+        text-align: center;
+    }
+
+    .more-project {
+        justify-content: center;
+    }
+
+}
+
+/* ------------Value------------- */
+
+.values{
+    background-color: #EFCEB1;
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.values-content{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+
+}
+
+.value-box{
+    width: 200px;
+    height: 200px;
+    background-color: #6e3d1a;
+    border: 0px;
+    border-radius:110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: white;
+    text-align: center;
+}
+
+i{
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 959px) {
+    .values h2{
+        text-align: center;
+    }
+    .values-content{
+        flex-wrap: wrap;
+    }
+}
+/* ------------Contact Me------------- */
+.contact{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.contact-form{
+    padding-top: 30px;
+}
+.contact-input{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact-input input{
+    width: 33vh;
+    border: 0px;
+    border-radius: 10px;
+    padding: 14px;
+    background-color: #F9ECDE;
+    margin-bottom: 20px;
+}
+
+.contact-input .tell-me-input{
+    width: 100%;
+}
+textarea:hover{
+    cursor: pointer;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+.btn-submit {
+    background-color: #6e3d1a;
+    color: white;
+    font-size: 16px;
+    padding: 12px 28px;
+    border: 0px;
+    border-radius: 20px;
+    margin: 10px auto;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-input input {
+        width: 100%;
+    }
+}
